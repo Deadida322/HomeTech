@@ -84,7 +84,7 @@ header{
     border-radius: 1.5em;
     padding: 1em 2em;
     background: #fbf0f0;
-    box-shadow:  11px 11px 22px #d5cccc,
+    box-shadow:  11px 11px 11px #d5cccc,
                 -5px -5px 10px #ffffff;
 }
 .repair_info_items{
@@ -214,7 +214,7 @@ header{
 }
 .why_item{
     background: #fbf0f0;
-    box-shadow:  22px 22px 44px #d5cccc,
+    box-shadow:  11px 11px 11px #d5cccccc,
                 -10px -10px 10px #ffffff;
     width: 23%;
     display: flex;
@@ -398,7 +398,7 @@ footer, section{
 
 .repair_info_items_item:hover{
     background: #fbf0f0;
-    box-shadow:  11px 11px 22px #ffffff,
+    box-shadow:  11px 11px 11px #ffffff,
                 -5px -5px 10px #d5cccc;
 }
 .repair_info_form_btn:hover{
@@ -476,9 +476,175 @@ footer, section{
     .repair_info_name{
         margin: .2em !important;
     }
+    .cards_map_iframe{
+        flex-shrink: 100%;
+        width: 100%;
+        height: 35em;
+        /* height: 100%; */
+        padding: 1em;
+        border-radius: .5em;
+    }
+    .cards_feedback{
+        width: 50em;
+    }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     html{
         font-size: 11px;
+    }
+}
+@media screen and (max-width: 800px) {
+    html{
+        font-size: 10px;
+    }
+    .repair_header_head{
+        position: absolute;
+        text-align: center;
+        font-size: 4em;
+        color: #fff;
+        padding-right: 0em;
+        text-shadow: -1px -1px 2px rgb(0, 0, 0);
+    }
+    .repair_header_img{
+        width: 100%;
+    }
+    .repair_header{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .width_btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .repair_info_items{
+        width: 100%;
+    }
+    .order2{
+        order: 2;
+    }
+    .phone_none{
+        display: none;
+    }
+    .repair_info_form{
+        width: 60%;
+    }
+    .cards_ya_block{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .why_item_head_ico{
+        width: 5vh;
+    }
+    .why_item_head_text{
+        font-size: 1.2em;
+    }
+    .prices_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 2em;
+    }
+    .prices_info_select{
+        display: flex;
+        width: 100%;
+    }
+    .prices_info_select div{
+        margin: .5em;
+        padding: .7em;
+    }
+    .repair_info_name{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .prices_info_select .repair_info_items_item{
+        width: 30%;
+    }
+    .prices_table {
+        margin-left: 0em;
+        width: 100%;
+    }
+    .check_list {
+        padding: 1em;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 2em;
+    }
+    .footer_text {
+        text-align: center;
+        font-size: 2em;
+        padding: 0 1em;
+        width: 98%;
+        margin-bottom: 2em;
+    }
+    .why_item {
+        width: 25%;
+    }
+    .why_item:hover .why_item_head_text{
+        transform: scale(0);
+    }
+    .why_item:hover .why_item_text {
+        margin-top: 0em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .repair_info {
+        padding: .2em;
+    }
+    .cards_map_iframe {
+        height: 30em;
+        padding: 0em;
+        border-radius: .5em;
+    }
+    section{
+        padding: 0.2em !important;
+    }
+    .cards_feedback {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .why {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .why_item_head_ico{
+        width: 6vh;
+    }
+    .why_item {
+        width: 40%;
+        margin: 1em;
+    }
+    .document_container{
+        display: none;
+    }
+    .check_list{
+        display: flex;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+    .check_list_list {
+        width: 80%;
+    }
+    .prices_show_all_txt{
+        font-size: 1.5em;
+    }
+    .repair_info_form {
+        width: 80%;
+    }
+    .repair_info_items {
+        width: 100%;
+        border: none;
+    }
+    .prices_header {
+        margin-top: 1em;
+    }
+    .price_button{
+        width: 70%;
+        margin-bottom: 1em;
     }
 }
