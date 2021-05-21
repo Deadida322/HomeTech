@@ -141,7 +141,7 @@ header{
     outline: none;
     padding: 1.5em;
     background: linear-gradient(145deg, #CDCFD2, #FFFFFF);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: inset 10.81px 10.81px 10px #c9cbd3, inset -10.81px -10.81px 10px #FFFFFF;
 }
 .repair_info_form_header{
@@ -428,6 +428,72 @@ footer, section{
 .repair_info_form *{
     margin:  .5em 0;
 }
+.modal_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+.modal_body{
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+}
+.modal_phone{
+    width: 50%;
+}
+.modal_offerta{
+    opacity: .6;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 2em 0em;
+    text-align: center;
+}
+.modal_btn{
+    width: 50%;
+    background: rgb(0,107,249);
+    color: #fff;
+    background: linear-gradient(126deg, rgba(0,107,249,1) 0%, rgba(1,161,255,1) 55%);
+}
+.modal_header{
+    font-weight: 500;
+    width: 70%;
+    font-size: 2em;
+}
+.modal_phone{
+    margin-right: 2em;
+}
+.modal{ 
+    transition: .4s ease-in-out;
+    position: fixed;
+    height: 100vh;
+    background-color: #00000056;
+    z-index: -99999;
+    transform: scale(1.2);
+    width: 100vw;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show_modal{
+    opacity: 1;
+    transform: scale(1);
+}
+.item_selected{
+    background: #ffe2ad;;
+    box-shadow: inset 9.01px 9.01px 18px #D1D3D7, inset -9.01px -9.01px 18px #FFFFFF;
+}
+.item_selected:hover{
+    background: #ffe2ad;;
+    box-shadow: inset 9.01px 9.01px 18px #D1D3D7, inset -9.01px -9.01px 18px #FFFFFF;
+}
+.item_selected img{
+    opacity: .7;
+}
+
 
 @media screen and (max-width: 1650px) {
     html{
@@ -590,6 +656,27 @@ footer, section{
     }
 }
 @media screen and (max-width: 500px) {
+    .modal{
+        padding: 4em;
+    }
+    .modal_header {
+        font-weight: 500;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .modal_body{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .modal_phone {
+        margin: 0;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    .modal_btn{
+        width: 90%;
+    }
     .repair_info {
         padding: .2em;
     }
