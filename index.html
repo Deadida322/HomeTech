@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" 
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" 
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/script.js"></script>
     <title>main</title>
 </head>
+
 <body>
     <div class="modal">
         <div class="modal_form">
             <div class="modal_header">Оставьте заявку и наш менеджер свяжется с вами</div>
             <div class="modal_body">
-                <input class="repair_info_form_phone modal_phone" placeholder="Ваш телефон" type="phone"/>
+                <input class="repair_info_form_phone modal_phone" placeholder="Ваш телефон" type="phone" />
                 <button class="repair_info_form_btn modal_btn">
                     <div class="repair_info_form_btn_text">Оставить заявку</div>
                     <img class="repair_info_form_btn_ico" src="styles/img/arr_l.png">	
@@ -32,9 +31,9 @@
     <header>
         <div class="head">
             <div class="head_number">
-                <div class="icon"><img class="head_number_phone" src="styles/img/svg/phone.svg" alt="phone" ></div>
+                <div class="icon"><img class="head_number_phone" src="styles/img/svg/phone.svg" alt="phone"></div>
                 <div class="head_number_digits">
-                     +7 904 186 77 88
+                    +7 904 186 77 88
                 </div>
             </div>
             <div class="head_name">Home<span class="head_name__blue">Tech</span></div>
@@ -46,13 +45,13 @@
         </div>
         <h1 class="repair_header_head">
             Ремонт <br>компьютеров<br> в Оренбурге!
-        </br>
+            </br>
     </section>
     <section class="repair_info">
         <div class="width_btn">
             <div class="repair_info_items">
                 <div class="repair_info_items_line">
-                    <div class="repair_info_items_item width_3">
+                    <div class="repair_info_items_item item_selected width_3">
                         <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
                         <div class="repair_info_name">Компьютер</div>
                     </div>
@@ -65,56 +64,17 @@
                         <div class="repair_info_name">Планшет/Смартфон</div>
                     </div>
                 </div>
-                <div class="repair_info_items_line">
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Диагностика</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Замена комплектующих</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Замена термопасты</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Настройка принтера</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Удаление вирусов</div>
-                    </div>
-                </div>
-                <div class="repair_info_items_line">
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Настройка биоса</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Установка Windows</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Установка Office</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Настройка Wi-fi</div>
-                    </div>
-                    <div class="repair_info_items_item width_5">
-                        <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
-                        <div class="repair_info_name">Выезд мастера</div>
-                    </div>
-                </div>
-            </div> 
+                <br>
+                <div class="services_container"></div>
+            </div>
+
             <form class="repair_info_form phone_none">
-                <div class="repair_info_form_header">Не знаете, что сломалось? <br><div class="dots">
-                    Срочный выезд мастера
-                </div></div>
-                <input class="repair_info_form_phone" placeholder="Ваш телефон" type="phone"/>
+                <div class="repair_info_form_header">Не знаете, что сломалось? <br>
+                    <div class="dots">
+                        Срочный выезд мастера
+                    </div>
+                </div>
+                <input class="repair_info_form_phone" placeholder="Ваш телефон" type="phone" />
                 <button class="repair_info_form_btn">
                     <div class="repair_info_form_btn_text">Вызывать мастера</div>
                     <img class="repair_info_form_btn_ico" src="styles/img/svg/next.svg">	
@@ -123,7 +83,7 @@
                     Нажимая на кнопку "Вызвать мастера" -Вы даёте согласие на обработку персональных данных
                 </div>
             </form>
-
+        </div>
         </div>
         <div class="price_button suggest order2">
             <button class="repair_info_form_btn ">
@@ -131,18 +91,15 @@
                 <img class="repair_info_form_btn_ico" src="styles/img/svg/next.svg">	
             </button>
         </div>
-        
+
     </section>
     <section class="cards">
         <div class="cards_ya_block">
             <div class="cards_feedback">
                 <div style="width:100%;height:35em;overflow:hidden;position:relative;">
-                    <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
-                        src="https://yandex.ru/maps-reviews-widget/1030281515?comments">
+                    <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1030281515?comments">
                     </iframe>
-                    <a href="https://yandex.ru/maps/org/zhelezyaka/1030281515/" 
-                        target="_blank" 
-                        style="box-sizing:border-box;
+                    <a href="https://yandex.ru/maps/org/zhelezyaka/1030281515/" target="_blank" style="box-sizing:border-box;
                             text-decoration:none;color:#b3b3b3;
                             font-size:10px;
                             font-family:YS Text,sans-serif;
@@ -151,47 +108,45 @@
                             bottom:8px;
                             width:100%;
                             text-align:center;
-                            left:0"
-                    >Железяка на карте Оренбурга — Яндекс.Карты</a></div>
+                            left:0">Железяка на карте Оренбурга — Яндекс.Карты</a></div>
             </div>
-                <iframe class="cards_map_iframe"src="https://yandex.ru/map-widget/v1/?um=constructor%3A94fb49097026604998326dc0e85ddb56db3e03e3a091a781a1cd69ac512416d4&amp;source=constructor" 
-                     height="100%" frameborder="0"></iframe>
+            <iframe class="cards_map_iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A94fb49097026604998326dc0e85ddb56db3e03e3a091a781a1cd69ac512416d4&amp;source=constructor" height="100%" frameborder="0"></iframe>
         </div>
         <div class="why">
             <div class="why_item">
                 <div class="why_item_head">
-                    <img class="why_item_head_ico" src="styles/img/svg/laptop_wheel.svg"/>
+                    <img class="why_item_head_ico" src="styles/img/svg/laptop-settings.svg" />
                     <div class="why_item_head_text">Диагностика</div>
                 </div>
                 <div class="why_item_text">
-                    Мастер быстро определит че захочет определить и че ты ему сделаешь, он в другом городе, сука
+                    Мастер быстро определит причину поломки и предложит оптимальное решение
                 </div>
             </div>
             <div class="why_item">
                 <div class="why_item_head">
-                    <img class="why_item_head_ico" src="styles/img/svg/laptop_wheel.svg"/>
+                    <img class="why_item_head_ico" src="styles/img/svg/imac-medal.svg" />
                     <div class="why_item_head_text">Опыт работы</div>
                 </div>
                 <div class="why_item_text">
-                    Мастер быстро определит че захочет определить и че ты ему сделаешь, он в другом городе, сука
+                    Мы устраняем 97% поломок в течении часа
                 </div>
             </div>
             <div class="why_item">
                 <div class="why_item_head">
-                    <img class="why_item_head_ico" src="styles/img/svg/laptop_wheel.svg"/>
+                    <img class="why_item_head_ico" src="styles/img/svg/agreement-like.svg" />
                     <div class="why_item_head_text">Гарантии</div>
                 </div>
                 <div class="why_item_text">
-                    Мастер быстро определит че захочет определить и че ты ему сделаешь, он в другом городе, сука
+                    Предоставляем поддержку после ремонта и гарантии на все типы работ
                 </div>
             </div>
             <div class="why_item">
                 <div class="why_item_head">
-                    <img class="why_item_head_ico" src="styles/img/svg/laptop_wheel.svg"/>
+                    <img class="why_item_head_ico" src="styles/img/svg/car.svg" />
                     <div class="why_item_head_text">Удобно</div>
                 </div>
                 <div class="why_item_text">
-                    Мастер быстро определит че захочет определить и че ты ему сделаешь, он в другом городе, сука
+                    При необходимости мы сами доставим Вашу технику в Наш сервис, а после ремонта привезём обратно
                 </div>
             </div>
         </div>
@@ -202,91 +157,40 @@
         </div>
         <div class="prices_info">
             <div class="prices_info_select">
-                <div class="repair_info_items_item">
+                <div class="repair_info_items_item prc item_selected">
                     <img src="styles/img/svg/compucter.svg" alt="" class="repair_info_img">
                     <div class="repair_info_name">Компьютер</div>
                 </div>
-                <div class="repair_info_items_item">
+                <div class="repair_info_items_item prc">
                     <img src="styles/img/svg/laptop.svg" alt="" class="repair_info_img">
                     <div class="repair_info_name">Ноутбук</div>
                 </div>
-                <div class="repair_info_items_item">
+                <div class="repair_info_items_item prc">
                     <img src="styles/img/svg/device.svg" alt="" class="repair_info_img">
                     <div class="repair_info_name">Планшет/Смартфон</div>
                 </div>
             </div>
             <div class="prices_table">
-                <div class="price_table_item gr">
-                    <div class="price_table_service">Услуга</div>
-                    <div class="price_table_digits">Цена</div>
-                    <div class="price_table_button suggest">   </div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Выезд мастера</div>
-                    <div class="price_table_digits">300 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Диагностика</div>
-                    <div class="price_table_digits">Бесплатно</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Замена дисплея</div>
-                    <div class="price_table_digits">от 499 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Замена клавиатуры</div>
-                    <div class="price_table_digits">от 599 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Замена USB</div>
-                    <div class="price_table_digits">от 499 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Замена HDD</div>
-                    <div class="price_table_digits">от 499 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
-                <div class="price_table_item">
-                    <div class="price_table_service">Замена разъёма питания</div>
-                    <div class="price_table_digits">от 499 ₽</div>
-                    <div class="price_table_button suggest">Заказать</div>
-                </div>
+
                 <div class="prices_show_all">
-                    <img class="prices_show_all_ico" src="styles/img/svg/eye_icon-icons.com_71204.svg"></img>
-                    <div class="prices_show_all_txt">Показать все</div>
+                    <img class="prices_show_all_ico" src="styles/img/svg/eye.svg"></img>
+                    <div class="prices_show_all_txt">Показать ещё</div>
                 </div>
             </div>
         </div>
-        
-    </section>
-    <section class="check_list">
-        <div class="document_container">
-            <img src="styles/img/place.jpg" alt="" class="check_list_document"/>
-        </div>
-        
-        <div class="check_list_list">
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-            <div class="check_list_item">Мы работаем по чётко определённым стандартам</div>
-        </div>
+
     </section>
     <footer class="footer">
         <div class="footer_text">
             Услуги профессионального ремонта цифровой техники в оренбргской области <br> Адрес: Оренбургская область, г.Оренбург ул. Ленина, 19
         </div>
         <form class="repair_info_form">
-            <div class="repair_info_form_header">Не знаете, что сломалось? <br><div class="dots">
-                Срочный выезд мастера
-            </div></div>
-            <input class="repair_info_form_phone" placeholder="Ваш телефон" type="phone"/>
+            <div class="repair_info_form_header">Не знаете, что сломалось? <br>
+                <div class="dots">
+                    Срочный выезд мастера
+                </div>
+            </div>
+            <input class="repair_info_form_phone" placeholder="Ваш телефон" type="phone" />
             <button class="repair_info_form_btn">
                 <div class="repair_info_form_btn_text">Вызывать мастера</div>
                 <img class="repair_info_form_btn_ico" src="styles/img/svg/next.svg">	
@@ -297,5 +201,5 @@
         </form>
 
     </footer>
-    
+
 </html>

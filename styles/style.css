@@ -1,56 +1,68 @@
-html{
+html {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
     overflow-x: hidden;
 }
-*,h1{
+
+*,
+h1 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     z-index: 2000;
     position: relative;
 }
-.body{
+
+.body {
     overflow-x: hidden;
 }
-.head{
-    background: rgb(255,210,23);
-    background: linear-gradient(126deg, rgba(255,210,23,1) 0%, rgba(221,182,22,1) 55%);
+
+.head {
+    background: rgb(255, 210, 23);
+    background: linear-gradient(126deg, rgba(255, 210, 23, 1) 0%, rgba(221, 182, 22, 1) 55%);
     width: 100vw;
     height: 4em;
-    box-shadow:         0px 3px 20px 0px rgba(50, 50, 50, 0.336);
+    box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.336);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
 }
-.head_number{
+
+.head_number {
     display: flex;
     align-items: center;
 }
-.head_number_digits{
+
+.head_number_digits {
     font-size: 1.7em;
 }
-.head_number_phone{
+
+.head_number_phone {
     width: 2em;
     margin-right: .5em;
 }
-.head_name{
+
+.head_name {
     font-weight: 500;
     font-size: 2em;
 }
-.head_name__blue{
+
+.head_name__blue {
     color: rgb(98, 98, 255);
 }
-.repair_header_head{
+
+.repair_header_head {
     font-weight: 300;
     font-size: 4em;
     padding-right: 2em;
 }
-.repair_header{
+
+.repair_header {
     position: relative;
     background-color: #f7ecf9;
     background: linear-gradient(126deg, #fef9ff 0%, #f7ecf9 55%);
@@ -60,7 +72,8 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.repair_info{
+
+.repair_info {
     width: 100vw;
     overflow-y: hidden;
     position: relative;
@@ -71,23 +84,26 @@ header{
     background-color: #e4f8f7;
     background: linear-gradient(126deg, #e4f8f7 0%, #ffebfb 55%);
 }
-.width_btn{
+
+.width_btn {
     display: flex;
     justify-content: space-between;
 }
-.repair_info_items_line{
+
+.repair_info_items_line {
     display: flex;
 }
-.repair_info_items_item{
+
+.repair_info_items_item {
     display: flex;
     margin: 1%;
     border-radius: 1.5em;
     padding: 1em 2em;
     background: #fbf0f0;
-    box-shadow:  11px 11px 11px #d5cccc,
-                -5px -5px 10px #ffffff;
+    box-shadow: 11px 11px 11px #d5cccc, -5px -5px 10px #ffffff;
 }
-.repair_info_items{
+
+.repair_info_items {
     width: 60%;
     padding: 1%;
     border-radius: 6px;
@@ -95,9 +111,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
-.repair_info_items_item{
+
+.repair_info_items_item {
     transition: all .3s ease-in-out;
     cursor: pointer;
     display: flex;
@@ -105,28 +121,33 @@ header{
     justify-content: center;
     align-items: center;
 }
-.repair_info_img{
+
+.repair_info_img {
     width: 6em;
     margin-bottom: 1em;
 }
-.width_3{
+
+.width_3 {
     width: 32%
 }
-.width_5{
+
+.width_5 {
     width: 18%
 }
-.repair_info_name{
+
+.repair_info_name {
     text-align: center;
 }
-.width_5 img{
+
+.width_5 img {
     width: 4em
 }
-.repair_info_form{
+
+.repair_info_form {
     width: 35%;
-    background: rgb(255,210,23);
-    background: linear-gradient(126deg, rgba(255,210,23,1) 0%, rgba(221,182,22,1) 55%);
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    background: rgb(255, 210, 23);
+    background: linear-gradient(126deg, rgba(255, 210, 23, 1) 0%, rgba(221, 182, 22, 1) 55%);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     border-radius: 20px;
     padding: 2em;
     display: flex;
@@ -135,7 +156,8 @@ header{
     flex-direction: column;
     padding-bottom: 3em;
 }
-.repair_info_form_phone{
+
+.repair_info_form_phone {
     border: none;
     width: 80%;
     outline: none;
@@ -144,11 +166,13 @@ header{
     border-radius: 10px;
     box-shadow: inset 10.81px 10.81px 10px #c9cbd3, inset -10.81px -10.81px 10px #FFFFFF;
 }
-.repair_info_form_header{
+
+.repair_info_form_header {
     font-size: 2em;
     text-align: center;
 }
-.repair_info_form_btn{
+
+.repair_info_form_btn {
     transition: all .3s ease-in-out;
     cursor: pointer;
     width: 80%;
@@ -160,40 +184,47 @@ header{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background: rgb(255,210,23);
-    background: linear-gradient(126deg, rgba(255,210,23,1) 0%, rgba(221,182,22,1) 55%);
+    background: rgb(255, 210, 23);
+    background: linear-gradient(126deg, rgba(255, 210, 23, 1) 0%, rgba(221, 182, 22, 1) 55%);
     box-shadow: 10.81px 10.81px 22px #00000033, -10.81px -10.81px 22px #fff9c657;
 }
-.repair_info_form_btn_ico{
+
+.repair_info_form_btn_ico {
     width: 1.5em;
 }
-.dots{
+
+.dots {
     margin-top: .2em;
     padding: .2em;
     border-radius: 6px;
     border: 3px dashed #d9dfe2;
 }
-.repair_info_offerta{
+
+.repair_info_offerta {
     text-align: center;
     opacity: .7;
 }
-.cards{
+
+.cards {
     position: relative;
     background-color: #f7ecf9;
     background: linear-gradient(126deg, #fef9ff 0%, #f7ecf9 55%);
     padding: 2em;
     width: 100vw;
 }
-.price_button{
+
+.price_button {
     width: 40%;
     margin-top: 1em;
 }
-.cards_ya_block{
+
+.cards_ya_block {
     justify-content: space-between;
     display: flex;
     margin-top: 1em;
 }
-.cards_map_iframe{
+
+.cards_map_iframe {
     flex-shrink: 100%;
     width: 100%;
     height: 35em;
@@ -201,21 +232,23 @@ header{
     padding: 1em;
     border-radius: .5em;
 }
-.cards_feedback{
+
+.cards_feedback {
     width: 35em;
     border: 3px dashed #d9dfe2;
     padding: 1em;
     border-radius: .5em;
 }
-.why{
+
+.why {
     width: 100%;
     padding: 1em;
     display: flex;
 }
-.why_item{
+
+.why_item {
     background: #fbf0f0;
-    box-shadow:  11px 11px 11px #d5cccccc,
-                -10px -10px 10px #ffffff;
+    box-shadow: 11px 11px 11px #d5cccccc, -10px -10px 10px #ffffff;
     width: 23%;
     display: flex;
     flex-direction: column;
@@ -227,7 +260,8 @@ header{
     margin: .5% 2%;
     transition: all .2s ease-in-out;
 }
-.why_item_head{
+
+.why_item_head {
     width: 80%;
     justify-content: center;
     display: flex;
@@ -235,30 +269,37 @@ header{
     flex-wrap: nowrap;
     flex-direction: column;
 }
-.why_item_head_text{
+
+.why_item_head_text {
     font-size: 1.5em;
 }
-.why_item_head_ico{
-    width: 10vh;
-    transition: width .4s ease;
+
+.why_item_head_ico {
+    height: 9vh;
+    transition: all .4s ease;
 }
-.why_item_text{
+
+.why_item_text {
     margin-top: 1em;
     height: 0;
     transform: scale(0);
     opacity: 0;
     transition: all .2s ease-in-out;
 }
-.why_item:hover .why_item_head_ico{
+
+.why_item:hover .why_item_head_ico {
     width: 0em;
+    height: 0;
 }
-.why_item:hover .why_item_text{
+
+.why_item:hover .why_item_text {
     height: 90%;
     opacity: 1;
     transform: scale(1);
 }
-.prices{
-    display:flex;
+
+.prices {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -267,25 +308,30 @@ header{
     background: linear-gradient(126deg, #e4f8f7 0%, #ffebfb 55%);
     padding: 2em;
 }
-.prices_header{
+
+.prices_header {
     text-align: center;
     font-size: 1.5em;
 }
-.prices_info{
+
+.prices_info {
     display: flex;
     width: 100vw;
     padding: 2em;
 }
-.prices_info_select{
+
+.prices_info_select {
     width: 20%;
     margin-top: 2em;
 }
-.prices_info_select div{
+
+.prices_info_select div {
     font-size: 18px;
     margin: 1em;
     padding: .5em;
 }
-.prices_table{
+
+.prices_table {
     display: flex;
     margin-left: 2em;
     flex-direction: column;
@@ -293,11 +339,12 @@ header{
     width: 70%;
     justify-content: space-between;
 }
-.price_table_item{
+
+.price_table_item {
     width: 100%;
     border-radius: 10px;
-    background: rgb(255,210,23);
-    background: linear-gradient(126deg, rgba(255,210,23,1) 0%, rgba(221,182,22,1) 55%);
+    background: rgb(255, 210, 23);
+    background: linear-gradient(126deg, rgba(255, 210, 23, 1) 0%, rgba(221, 182, 22, 1) 55%);
     box-shadow: 10.81px 10.81px 15px #0000002a, -10.81px -10.81px 11px #ffffff;
     display: flex;
     align-items: center;
@@ -306,64 +353,77 @@ header{
     font-size: 1.2em;
     padding: 0.7em 1em;
 }
-.price_table_service{
+
+.price_table_service {
     width: 50%
 }
-.price_table_digits{
+
+.price_table_digits {
     width: 25%;
     text-align: center;
 }
-.price_table_button{
+
+.price_table_button {
     width: 25%;
     text-align: right;
-    color:teal;
+    color: teal;
 }
-.gr{
+
+.gr {
     background: transparent;
     box-shadow: none;
     margin: 0;
     opacity: .7;
 }
 
-.prices_show_all_ico{
+.prices_show_all_ico {
     width: 1.5em;
     margin: .2em;
 }
-.prices_show_all{
+
+.prices_show_all {
     display: flex;
     align-items: center;
 }
-footer, section{
+
+footer,
+section {
     width: 100vw;
     background-color: #f7ecf9;
     background: linear-gradient(126deg, #e4f8f7 0%, #ffebfb 55%);
 }
-.check_list{
+
+.check_list {
     display: flex;
     padding: 1em 10em;
 }
-.check_list_document{
+
+.check_list_document {
     width: 100%;
-    box-shadow:         7px 8px 20px 0px rgba(50, 50, 50, 0.48);
+    box-shadow: 7px 8px 20px 0px rgba(50, 50, 50, 0.48);
 }
-.document_container{
+
+.document_container {
     margin-right: 10%;
     width: 35em;
     padding: 2em;
     border-radius: 6px;
     border: 3px dashed #d9dfe2;
 }
-.check_list_list{
-    display:flex;
+
+.check_list_list {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.check_list_item{
+
+.check_list_item {
     font-size: 1.5em;
     position: relative;
     margin: 1em 0em;
 }
-.check_list_item::before{
+
+.check_list_item::before {
     position: absolute;
     top: 0;
     left: -1.2em;
@@ -374,7 +434,8 @@ footer, section{
     background-position: center;
     background-size: cover;
 }
-.footer{
+
+.footer {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -382,53 +443,63 @@ footer, section{
     background-color: #f7ecf9;
     background: linear-gradient(126deg, #ffebfb 0%, #e4f8f7 55%);
 }
-.footer_text{
+
+.footer_text {
     text-align: center;
     font-size: 2em;
     padding: 0 1em;
     width: 50%;
 }
-.repair_header_img{
+
+.repair_header_img {
     width: 60%;
 }
-.repair_header_image{
+
+.repair_header_image {
     width: 100%;
 }
 
-
-.repair_info_items_item:hover{
+.repair_info_items_item:hover {
     background: #fbf0f0;
-    box-shadow:  11px 11px 11px #ffffff,
-                -5px -5px 10px #d5cccc;
+    box-shadow: 11px 11px 11px #ffffff, -5px -5px 10px #d5cccc;
 }
-.repair_info_form_btn:hover{
-    box-shadow: 10.81px 10.81px 22px #fff9c657,
-     -10.81px -10.81px 22px #00000033;
+
+.repair_info_form_btn:hover {
+    box-shadow: 10.81px 10.81px 22px #fff9c657, -10.81px -10.81px 22px #00000033;
 }
-.repair_info_form_btn *{
+
+.repair_info_form_btn * {
     transition: all .2s ease-in-out;
 }
-.repair_info_form_btn:hover .repair_info_form_btn_ico{
+
+.repair_info_form_btn:hover .repair_info_form_btn_ico {
     transform: translateX(4px)
 }
-.repair_info_form_btn:hover *{
+
+.repair_info_form_btn:hover * {
     filter: invert(.9)
 }
-.price_table_item{
+
+.price_table_item {
     transition: all .2s ease-in-out
 }
-.price_table_item:hover{
+
+.price_table_item:hover {
     box-shadow: 10.81px 10.81px 15px #fff, -10.81px -10.81px 11px #0000002a;
     transform: translateY(-4px);
 }
-.prices_show_all_txt:hover, .price_table_button:hover{
+
+.prices_show_all_txt:hover,
+.price_table_button:hover {
     text-decoration: underline;
-    cursor:pointer
+    cursor: pointer
 }
-.repair_info_form *{
-    margin:  .5em 0;
+
+.repair_info_form * {
+    margin: .5em 0;
 }
-.modal_form{
+
+.modal_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -436,36 +507,43 @@ footer, section{
     border-radius: 10px;
     padding: 1.5em;
 }
-.modal_body{
+
+.modal_body {
     margin-top: 1em;
     display: flex;
     width: 100%;
 }
-.modal_phone{
+
+.modal_phone {
     width: 50%;
 }
-.modal_offerta{
+
+.modal_offerta {
     opacity: .6;
     font-size: 1em;
     font-weight: 500;
     margin: 2em 0em;
     text-align: center;
 }
-.modal_btn{
+
+.modal_btn {
     width: 50%;
-    background: rgb(0,107,249);
+    background: rgb(0, 107, 249);
     color: #fff;
-    background: linear-gradient(126deg, rgba(0,107,249,1) 0%, rgba(1,161,255,1) 55%);
+    background: linear-gradient(126deg, rgba(0, 107, 249, 1) 0%, rgba(1, 161, 255, 1) 55%);
 }
-.modal_header{
+
+.modal_header {
     font-weight: 500;
     width: 70%;
     font-size: 2em;
 }
-.modal_phone{
+
+.modal_phone {
     margin-right: 2em;
 }
-.modal{ 
+
+.modal {
     transition: .4s ease-in-out;
     position: fixed;
     height: 100vh;
@@ -478,71 +556,79 @@ footer, section{
     align-items: center;
     justify-content: center;
 }
-.show_modal{
+
+.show_modal {
     opacity: 1;
     transform: scale(1);
 }
-.item_selected{
-    background: #ffe2ad;;
+
+.item_selected {
+    background: #ffe2ad;
+    ;
     box-shadow: inset 9.01px 9.01px 18px #D1D3D7, inset -9.01px -9.01px 18px #FFFFFF;
 }
-.item_selected:hover{
-    background: #ffe2ad;;
+
+.item_selected:hover {
+    background: #ffe2ad;
+    ;
     box-shadow: inset 9.01px 9.01px 18px #D1D3D7, inset -9.01px -9.01px 18px #FFFFFF;
 }
-.item_selected img{
+
+.item_selected img {
     opacity: .7;
 }
 
-
 @media screen and (max-width: 1650px) {
-    html{
+    html {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width: 1550px) {
-    html{
+    html {
         font-size: 16px;
     }
-    .why_item_head_ico{
+    .why_item_head_ico {
         width: 8vh;
     }
 }
+
 @media screen and (max-width: 1400px) {
-    html{
+    html {
         font-size: 14px;
     }
-    .repair_info_form_btn_text{
+    .repair_info_form_btn_text {
         font-size: .9em;
     }
-    .why_item_head_ico{
+    .why_item_head_ico {
         width: 7vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .footer_text{
+    .footer_text {
         width: 40%;
     }
 }
+
 @media screen and (max-width: 1100px) {
-    html{
+    html {
         font-size: 12px;
     }
-    .why_item_head_ico{
+    .why_item_head_ico {
         width: 6vh;
     }
-    .repair_info_img{
+    .repair_info_img {
         width: 6vh;
     }
-    .prices_info_select div{
+    .prices_info_select div {
         margin: 1em;
         padding: .7em;
     }
-    .repair_info_name{
+    .repair_info_name {
         margin: .2em !important;
     }
-    .cards_map_iframe{
+    .cards_map_iframe {
         flex-shrink: 100%;
         width: 100%;
         height: 35em;
@@ -550,20 +636,22 @@ footer, section{
         padding: 1em;
         border-radius: .5em;
     }
-    .cards_feedback{
+    .cards_feedback {
         width: 50em;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    html{
+    html {
         font-size: 11px;
     }
 }
+
 @media screen and (max-width: 800px) {
-    html{
+    html {
         font-size: 10px;
     }
-    .repair_header_head{
+    .repair_header_head {
         position: absolute;
         text-align: center;
         font-size: 4em;
@@ -571,60 +659,60 @@ footer, section{
         padding-right: 0em;
         text-shadow: -1px -1px 2px rgb(0, 0, 0);
     }
-    .repair_header_img{
+    .repair_header_img {
         width: 100%;
     }
-    .repair_header{
+    .repair_header {
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
     }
-    .width_btn{
+    .width_btn {
         flex-direction: column;
         align-items: center;
     }
-    .repair_info_items{
+    .repair_info_items {
         width: 100%;
     }
-    .order2{
+    .order2 {
         order: 2;
     }
-    .phone_none{
+    .phone_none {
         display: none;
     }
-    .repair_info_form{
+    .repair_info_form {
         width: 60%;
     }
-    .cards_ya_block{
+    .cards_ya_block {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .why_item_head_ico{
+    .why_item_head_ico {
         width: 5vh;
     }
-    .why_item_head_text{
+    .why_item_head_text {
         font-size: 1.2em;
     }
-    .prices_info{
+    .prices_info {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
         padding: 2em;
     }
-    .prices_info_select{
+    .prices_info_select {
         display: flex;
         width: 100%;
     }
-    .prices_info_select div{
+    .prices_info_select div {
         margin: .5em;
         padding: .7em;
     }
-    .repair_info_name{
+    .repair_info_name {
         margin: 0 !important;
         padding: 0 !important;
     }
-    .prices_info_select .repair_info_items_item{
+    .prices_info_select .repair_info_items_item {
         width: 30%;
     }
     .prices_table {
@@ -648,15 +736,16 @@ footer, section{
     .why_item {
         width: 25%;
     }
-    .why_item:hover .why_item_head_text{
+    .why_item:hover .why_item_head_text {
         transform: scale(0);
     }
     .why_item:hover .why_item_text {
         margin-top: 0em;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .modal{
+    .modal {
         padding: 4em;
     }
     .modal_header {
@@ -664,7 +753,7 @@ footer, section{
         width: 100%;
         font-size: 1.5em;
     }
-    .modal_body{
+    .modal_body {
         align-items: center;
         width: 100%;
         flex-direction: column;
@@ -674,7 +763,7 @@ footer, section{
         width: 90%;
         margin-bottom: 1em;
     }
-    .modal_btn{
+    .modal_btn {
         width: 90%;
     }
     .repair_info {
@@ -685,7 +774,7 @@ footer, section{
         padding: 0em;
         border-radius: .5em;
     }
-    section{
+    section {
         padding: 0.2em !important;
     }
     .cards_feedback {
@@ -698,17 +787,17 @@ footer, section{
         flex-wrap: wrap;
         display: flex;
     }
-    .why_item_head_ico{
+    .why_item_head_ico {
         width: 6vh;
     }
     .why_item {
         width: 40%;
         margin: 1em;
     }
-    .document_container{
+    .document_container {
         display: none;
     }
-    .check_list{
+    .check_list {
         display: flex;
         padding: 1em;
         align-items: center;
@@ -717,7 +806,7 @@ footer, section{
     .check_list_list {
         width: 80%;
     }
-    .prices_show_all_txt{
+    .prices_show_all_txt {
         font-size: 1.5em;
     }
     .repair_info_form {
@@ -730,8 +819,47 @@ footer, section{
     .prices_header {
         margin-top: 1em;
     }
-    .price_button{
+    .price_button {
         width: 70%;
         margin-bottom: 1em;
     }
+}
+
+.services_item_image img {
+    height: 4em;
+    padding: .5em;
+}
+
+.services_item {
+    text-align: center;
+    margin: 1%;
+    border-radius: 1.5em;
+    padding: 1em 2em;
+    background: #fbf0f0;
+    box-shadow: 11px 11px 11px #d5cccc, -5px -5px 10px #ffffff;
+    flex-basis: 22%;
+    display: flex;
+    align-items: center;
+    margin: .5em;
+    flex-direction: column;
+    transition: all .2s ease;
+    cursor: pointer;
+    justify-content: center;
+    min-height: 9.5em;
+}
+
+.services_item:hover {
+    box-shadow: 11px 11px 11px #ffffff, -5px -5px 10px #d5cccc;
+}
+
+.services_container {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dnone {
+    display: none;
 }
