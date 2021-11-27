@@ -1,14 +1,24 @@
+import addServices from "./script.js"
+
 function drawByKey(key, types) {
     let template = ''
     let container = $('.services_container')
+    container.empty()
     for (let i in types[key]) {
-        template += `<div class="services_item">
-            <div class="services_item_image">
-            <img src="styles/img/svg/${key}/${i}.svg"/></div>
-            <div>${types[key][i]}</div>
-        </div>`
+        let el = `<div class="services_item" onclick="fuck(event)">
+        <div class="services_item_image" >
+        <img src="styles/img/svg/${key}/${i}.svg"/></div>
+        <div class="types_key">${types[key][i]}</div>
+    </div>`
+        container.append($(el))
     }
-    container.html(template)
+
+    $('.services_item').on('click', function() {
+        addServices(this)
+        $(this).addClass('service_selected')
+    })
+
+
 }
 
 function reDrawTypes(currentType, types) {

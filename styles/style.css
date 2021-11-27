@@ -97,10 +97,26 @@ header {
 .repair_info_items_item {
     display: flex;
     margin: 1%;
+    position: relative;
     border-radius: 1.5em;
     padding: 1em 2em;
     background: #fbf0f0;
     box-shadow: 11px 11px 11px #d5cccc, -5px -5px 10px #ffffff;
+}
+
+.tap_img {
+    position: absolute;
+    top: -.5em;
+    right: -.5em;
+    opacity: .6;
+}
+
+.item_selected .tap_img {
+    display: none;
+}
+
+.tap_img img {
+    width: 1.5em;
 }
 
 .repair_info_items {
@@ -489,6 +505,11 @@ section {
     transform: translateY(-4px);
 }
 
+.gr:hover {
+    box-shadow: none;
+    transform: translateY(0px);
+}
+
 .prices_show_all_txt:hover,
 .price_table_button:hover {
     text-decoration: underline;
@@ -793,6 +814,7 @@ section {
     .why_item {
         width: 40%;
         margin: 1em;
+        height: 13vh;
     }
     .document_container {
         display: none;
@@ -862,4 +884,14 @@ section {
 
 .dnone {
     display: none;
+}
+
+.repair_info_header {
+    font-size: 3em;
+    padding: 1rem;
+}
+
+.service_selected {
+    border-top: 2px solid rgba(255, 210, 23, 1)!important;
+    opacity: .8;
 }

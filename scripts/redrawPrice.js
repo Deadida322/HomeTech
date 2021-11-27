@@ -13,13 +13,22 @@ function drawByKey(key, types, toShow) {
     </div>`
     }
     if (toShow < types[key].length) {
-        container.html(template + `<div class="prices_show_all">
-    <img class="prices_show_all_ico" src="styles/img/svg/eye.svg"></img>
-    <div class="prices_show_all_txt">Показать все</div>
-</div>`)
+        template +=
+            `<div class="prices_show_all">
+                <img class="prices_show_all_ico" src="styles/img/svg/eye.svg"></img>
+                <div class="prices_show_all_txt">Показать ещё</div>
+            </div>`
     } else {
-        container.html(template)
+
     }
+
+    if (toShow > 8) {
+        template +=
+            `<div class="prices_show_less">
+                <div class="prices_show_all_txt">Показать меньше</div>
+            </div>`
+    }
+    container.html(template)
 
 }
 export default function redrawPrice(CurrentType, types, toShow) {
