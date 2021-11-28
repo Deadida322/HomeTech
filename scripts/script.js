@@ -5,7 +5,7 @@ import reDrawTypes from "./redrawTypes.js"
 
 let currentType = 'Компьютер'
 let currentPrice = 'Компьютер'
-let toShow = 8
+let toShow = 6
 let buttons = [];
 let buttonsPrice = [];
 let clientServices = [];
@@ -43,6 +43,7 @@ let showMore = () => {
     redrawPrice(currentPrice, pricelist, toShow);
     $('.prices_show_less').on('click', function() { showLess() })
     $('.prices_show_all').on('click', function() { showMore() })
+    $('.suggest').on('click', (e) => suggest(e))
 }
 let showLess = () => {
     toShow -= 8
@@ -51,6 +52,7 @@ let showLess = () => {
     redrawPrice(currentPrice, pricelist, toShow);
     $('.prices_show_all').on('click', function() { showMore() })
     $('.prices_show_less').on('click', function() { showLess() })
+    $('.suggest').on('click', (e) => suggest(e))
 }
 
 function disable_modal(e) {
@@ -76,7 +78,7 @@ $(function() {
         for (let el of buttonsPrice) {
             el.classList.remove('item_selected')
         }
-        toShow = 8
+        toShow = 6
         redrawPrice(currentPrice, pricelist, toShow);
         $(this).addClass('item_selected')
         $('.prices_show_all').on('click', function() { showMore() })

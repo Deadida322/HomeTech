@@ -22,10 +22,10 @@ function drawByKey(key, types, toShow) {
 
     }
 
-    if (toShow > 8) {
+    if (toShow > 6) {
         template +=
             `<div class="prices_show_less">
-                <div class="prices_show_all_txt">Показать меньше</div>
+                <div class="prices_show_all_txt">Скрыть</div>
             </div>`
     }
     container.html(template)

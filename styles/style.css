@@ -892,6 +892,7 @@ section {
 }
 
 .service_selected {
-    border-top: 2px solid rgba(255, 210, 23, 1)!important;
+    border: 2px solid rgba(255, 210, 23, 1)!important;
+    box-shadow: inset -11px -11px 11px #ffffff, -5px -5px 10px #d5cccc, inset 10.81px 10.81px 10px #c9cbd3;
     opacity: .8;
 }
